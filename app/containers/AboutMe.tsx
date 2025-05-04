@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <section className="mx-auto max-w-4xl py-24 text-center">
+    <section className="mx-auto max-w-5xl py-24 text-center">
       <h2 className="pb-12 text-center text-2xl font-bold uppercase tracking-widest text-secondary-light dark:text-secondary-dark">
         About Me
       </h2>
