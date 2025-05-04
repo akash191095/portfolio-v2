@@ -5,7 +5,7 @@ import { ColorModeToggle } from "./ui/color-mode-toggle";
 
 export default function Nav() {
   return (
-    <nav className="fixed z-50 w-full bg-gray-100 p-2 dark:bg-gray-800">
+    <nav className="fixed z-50 w-full bg-gray-100 p-2 dark:bg-gray-800 px-4">
       <ul className="flex gap-3">
         <li>
           <Link href="/">
