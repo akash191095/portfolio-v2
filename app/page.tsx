@@ -1,6 +1,7 @@
 "use client";
 
 import AboutMe from "@/containers/AboutMe";
+import Exprience from "@/containers/Exprience";
 import Hero from "@/containers/Hero";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
@@ -26,6 +27,7 @@ export default function Home() {
     >
       <Hero />
       <AboutMe />
+      <Exprience />
     </div>
   );
 }
