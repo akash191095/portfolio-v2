@@ -1,6 +1,6 @@
-import { ThemeProvider } from "@/components/theme-provider";
+import Nav from "./components/Nav";
+import { ThemeProvider } from "./components/theme-provider";
 import "./globals.css";
-import Nav from "@/components/Nav";
 
 export default function RootLayout({
   children,

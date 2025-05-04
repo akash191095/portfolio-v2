@@ -1,33 +1,19 @@
-"use client";
+"use server";
 
-import AboutMe from "@/containers/AboutMe";
-import Exprience from "@/containers/Exprience";
-import Hero from "@/containers/Hero";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import Hero from "./containers/Hero";
+import AboutMe from "./containers/AboutMe";
+import Exprience from "./containers/Exprience";
+import OpenSource from "./containers/OpenSource";
 
-export default function Home() {
-  const { resolvedTheme } = useTheme();
-
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
-
+export default async function Home() {
   return (
     <div
-      className={`relative mb-32 flex min-h-screen min-w-full flex-col px-6 font-sans ${
-        resolvedTheme === "dark" ? "bg-gray-900" : "bg-white"
-      }`}
+      className={`relative mb-32 flex min-h-screen min-w-full flex-col px-6 font-sans`}
     >
       <Hero />
       <AboutMe />
       <Exprience />
+      <OpenSource />
     </div>
   );
 }

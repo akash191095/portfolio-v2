@@ -1,8 +1,20 @@
-import VerticalLinedItem from "@/components/VerticalLinedItem";
+"use client";
 import { useTheme } from "next-themes";
+import VerticalLinedItem from "../components/VerticalLinedItem";
+import { useEffect, useState } from "react";
 
 export default function Exprience() {
+  const [mounted, setMounted] = useState(false);
   const { resolvedTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
     <section className="py-24">
       <h2 className="pb-12 text-center text-2xl font-bold uppercase tracking-widest text-secondary-light dark:text-secondary-dark">
