@@ -4,6 +4,8 @@ import Hero from "./containers/Hero";
 import AboutMe from "./containers/AboutMe";
 import Exprience from "./containers/Exprience";
 import OpenSource from "./containers/OpenSource";
+import Skills from "./containers/Skills";
+import ContactMe from "./containers/ContactMe";
 
 export default async function Home() {
   return (
@@ -14,6 +16,8 @@ export default async function Home() {
       <AboutMe />
       <Exprience />
       <OpenSource />
+      <Skills />
+      <ContactMe />
     </div>
   );
 }

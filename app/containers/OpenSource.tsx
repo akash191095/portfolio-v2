@@ -39,8 +39,6 @@ export default async function OpenSource() {
   const data = await request.json();
   const prs = data.data.viewer.pullRequests.nodes;
 
-  console.log(prs, "akash");
-
   return (
     <section className="py-24">
       <h2 className="pb-12 text-center text-2xl font-bold uppercase tracking-widest text-secondary-light dark:text-secondary-dark">
@@ -61,7 +59,7 @@ export default async function OpenSource() {
               <Link
                 href={pullRequest.repository.homepageUrl}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="hover:text-blue-300"
               >
                 {pullRequest.repository.name} : {formattedDate}
@@ -72,7 +70,7 @@ export default async function OpenSource() {
               <Link
                 href={pullRequest.permalink}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 #{pullRequest.number}({pullRequest.state}): {pullRequest.title}
               </Link>
