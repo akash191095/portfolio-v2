@@ -1,6 +1,6 @@
 "use client";
 
-import { ColorModeToggle } from "@/components/ui/color-mode-toggle";
+import AboutMe from "@/containers/AboutMe";
 import Hero from "@/containers/Hero";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
@@ -24,8 +24,8 @@ export default function Home() {
         resolvedTheme === "dark" ? "bg-gray-900" : "bg-white"
       }`}
     >
-      <ColorModeToggle />
       <Hero />
+      <AboutMe />
     </div>
   );
 }
