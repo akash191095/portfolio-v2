@@ -9,7 +9,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
+      <head>
+        <title>Akash Agarwal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Akash Agarwal's personal website and portfolio"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body>
         <ThemeProvider
           attribute="class"
