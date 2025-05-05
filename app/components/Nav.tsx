@@ -9,7 +9,7 @@ export default function Nav() {
       <ul className="flex gap-3">
         <li>
           <Link href="/">
-            <Button variant="outline">
+            <Button variant="outline" className="cursor-pointer">
               <HomeIcon width={18} className="mr-2" />
               Home
             </Button>
@@ -17,7 +17,7 @@ export default function Nav() {
         </li>
         <li>
           <Link href="/blog">
-            <Button variant="outline">
+            <Button variant="outline" className="cursor-pointer">
               <RectangleStackIcon width={18} className="mr-2" />
               Blog
             </Button>
