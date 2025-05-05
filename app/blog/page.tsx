@@ -10,7 +10,7 @@ export default async function page() {
   const postMetadata = getPostMetadata("posts");
 
   return (
-    <div className="flex  justify-center">
+    <div className="flex justify-center px-4">
       <div className="prose w-full py-10 dark:prose-invert dark:prose-pre:bg-pre">
         <main data-testid="blog" className="pt-8">
           <header>

@@ -46,7 +46,7 @@ export default async function PostPage(props: {
   const post = getPostContent(slug);
 
   return (
-    <div className="flex  justify-center">
+    <div className="flex justify-center px-4">
       <div className="prose w-full py-10 dark:prose-invert dark:prose-pre:bg-pre">
         <main>
           <article>
