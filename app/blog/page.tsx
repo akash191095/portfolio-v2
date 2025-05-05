@@ -1,6 +1,11 @@
 import getPostMetadata from "@/lib/posts";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Blog | Akash Agarwal",
+  description: "Akash Agarwal's personal website and portfolio",
+};
+
 export default async function page() {
   const postMetadata = getPostMetadata("posts");
 

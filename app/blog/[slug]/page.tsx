@@ -8,6 +8,7 @@ import getPostMetadata from "@/lib/posts";
 import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
 import "highlight.js/styles/github-dark-dimmed.min.css";
+import _ from "lodash";
 
 hljs.registerLanguage("javascript", javascript);
 
@@ -31,9 +32,10 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const id = slug ? " ⋅ " + slug : "";
+
+  const id = slug ? " | " + _.startCase(_.toLower(slug)) : "";
   return {
-    title: `Akash Agarwal Blog | ${id.replaceAll("_", " ")}`,
+    title: `Blog ${id.replaceAll("_", " ")}`,
   };
 }
 
